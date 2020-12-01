@@ -1,11 +1,12 @@
 import React from 'react';
-import './App.css';
-import  Nav  from "./Nav";
-import About from './About';
-import Shop from './Shop';
-import {BrowserRouter as Router, Switch ,Route  } from 'react-router-dom';
+import './App.css' ;
+import  Nav  from "../Pages/Nav";
+import About from '../Pages/About';
+import Shop from '../Pages/Shop';
+import {BrowserRouter as Router, Switch ,Route ,  } from 'react-router-dom';
 
-function App() {
+class  App extends React.Component {
+  render() {
   return (
     <Router>
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
     </div>
     </Router>
   );
+}
 }
 
 const Home =() => (
